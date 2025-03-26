@@ -3,8 +3,6 @@ pipeline {
 
     environment {
         FTP_SERVER = 'www'
-        FTP_USERNAME = 'tenant1@toysroom.it'
-        FTP_PASSWORD = '&gIRyy8e-o{2'
     }
 
     stages {
@@ -52,7 +50,7 @@ pipeline {
                         allowMissing: false,
                         cleanRemote: false,
                         excludes: '',
-                        ftpCredentialsId: FTP_SERVER,
+                        ftpCredentialsId: '616c172b-7247-46d0-8966-1593c490c148',
                         targetDir: '',
                         sourceFiles: '**/*.*'
                     )
