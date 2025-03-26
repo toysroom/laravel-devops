@@ -1,10 +1,6 @@
 pipeline {
     agent any
 
-    environment {
-        FTP_SERVER = 'www'
-    }
-
     stages {
         stage('Checkout') {
             steps {
@@ -46,16 +42,17 @@ pipeline {
         stage('Deploy to FTP') {
             steps {
                 script {
-                    ftpPublisher(
-                        configName: 'www',
-                        transfers: [
-                            [
-                                sourceFiles: '**/*',
-                                remoteDirectory: '/',
-                                excludes: '.git/**, storage/**, .env, node_modules/**'
-                            ]
-                        ]
-                    )
+                    step([$class: 'PublishOverFTP',
+                        consolePrefix: 'FTP:',
+                        transfers: [[
+                            remoteDirectory: '',
+                            sourceFiles: '**/*'
+                        ]],
+                        ftpPublishers: [[
+                            configName: 'www',
+                            verbose: true
+                        ]]
+                    ])
                 }
             }
         }
