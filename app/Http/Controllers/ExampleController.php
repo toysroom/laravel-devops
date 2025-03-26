@@ -29,7 +29,7 @@ class ExampleController extends Controller
         return "Another example"; // Errore: mancanza di spazi attorno alle parentesi
     }
 
-    public function calculate($a, $b, $operation)
+    public function calculate($a: int , $b: int, $operation: string)
     {
         if ($operation == 'add') {
             return $a + $b;

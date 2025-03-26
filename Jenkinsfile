@@ -1,6 +1,12 @@
 pipeline {
     agent any
 
+    environment {
+        FTP_SERVER = 'www'
+        FTP_USERNAME = 'tenant1@toysroom.it'
+        FTP_PASSWORD = '&gIRyy8e-o{2'
+    }
+
     stages {
         stage('Checkout') {
             steps {
@@ -35,6 +41,22 @@ pipeline {
         stage('Run Tests') {
             steps {
                 sh 'php artisan test'
+            }
+        }
+
+
+        stage('Deploy to FTP') {
+            steps {
+                script {
+                    publishOverFTP(
+                        allowMissing: false,
+                        cleanRemote: false,
+                        excludes: '',
+                        ftpCredentialsId: FTP_SERVER,
+                        targetDir: '',
+                        sourceFiles: '**/*.*'
+                    )
+                }
             }
         }
     }
