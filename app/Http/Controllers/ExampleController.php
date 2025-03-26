@@ -5,14 +5,15 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 class ExampleController extends Controller
-{   
+{
     public function exampleFunction(): void {
         $foo = "Hello World"; // Errore: mancanza di spazio tra la dichiarazione e la variabile
         echo $foo;
 
         $names = [
             'mario', 
-            'luigi'
+            'luigi',
+            'stefano',
         ];
     }
 
