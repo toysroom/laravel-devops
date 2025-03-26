@@ -46,13 +46,15 @@ pipeline {
         stage('Deploy to FTP') {
             steps {
                 script {
-                    publishOverFTP(
-                        allowMissing: false,
-                        cleanRemote: false,
-                        excludes: '',
-                        ftpCredentialsId: '616c172b-7247-46d0-8966-1593c490c148',
-                        targetDir: '',
-                        sourceFiles: '**/*.*'
+                    ftpPublisher(
+                        configName: 'www',
+                        transfers: [
+                            [
+                                sourceFiles: '**/*',
+                                remoteDirectory: '/',
+                                excludes: '.git/**, storage/**, .env, node_modules/**'
+                            ]
+                        ]
                     )
                 }
             }
