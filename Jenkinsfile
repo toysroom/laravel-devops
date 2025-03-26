@@ -43,15 +43,15 @@ pipeline {
         success {
             echo 'Deploy OK'
             mail to: 'alessandro.brugioni@gmail.com',
-                subject: "Build Success: ${currentBuild.fullDisplayName}. Check the logs here: ${env.BUILD_URL}",
-                body: "The build was successful!"
+                subject: "Build Success: ${currentBuild.fullDisplayName}.",
+                body: "The build was successful! Check the logs here: ${env.BUILD_URL}"
         }
 
         failure {
             echo 'Deploy KO'
             mail to: 'alessandro.brugioni@gmail.com',
-                subject: "Build failed: ${currentBuild.fullDisplayName}. Check the logs here: ${env.BUILD_URL}",
-                body: "The build was failed!"
+                subject: "Build failed: ${currentBuild.fullDisplayName}",
+                body: "The build was failed!. Check the logs here: ${env.BUILD_URL}"
         }
      }
 }
