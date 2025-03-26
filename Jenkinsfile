@@ -42,20 +42,16 @@ pipeline {
     post {
         success {
             echo 'Deploy OK'
-            emailext(
-                to: 'alessandro.brugioni@gmail.com',
+            mail to: 'alessandro.brugioni@gmail.com',
                 subject: "Build Success: ${currentBuild.fullDisplayName}. Check the logs here: ${env.BUILD_URL}",
                 body: "The build was successful!"
-            )
         }
 
         failure {
             echo 'Deploy KO'
-            emailext(
-                subject: "Failure: ${currentBuild.fullDisplayName}",
-                body: "Build Failed: ${currentBuild.fullDisplayName}. Check the logs here: ${env.BUILD_URL}",
-                to: 'alessandro.brugioni@gmail.com'
-            )
+            mail to: 'alessandro.brugioni@gmail.com',
+                subject: "Build failed: ${currentBuild.fullDisplayName}. Check the logs here: ${env.BUILD_URL}",
+                body: "The build was failed!"
         }
      }
 }
