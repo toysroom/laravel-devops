@@ -29,21 +29,21 @@ class ExampleController extends Controller
         return "Another example"; // Errore: mancanza di spazi attorno alle parentesi
     }
 
-    public function calculate($a: int , $b: int, $operation: string)
-    {
-        if ($operation == 'add') {
-            return $a + $b;
-        } elseif ($operation == 'subtract') {
-            return $a - $b;
-        } elseif ($operation == 'multiply') {
-            return $a * $b;
-        } elseif ($operation == 'divide') {
-            if ($b == 0) {
-                return 'Error: Division by zero';
-            }
-            return $a / $b;
-        } else {
-            return 'Error: Unknown operation';
-        }
-    }
+    // public function calculate($a: int , $b: int, $operation: string)
+    // {
+    //     if ($operation == 'add') {
+    //         return $a + $b;
+    //     } elseif ($operation == 'subtract') {
+    //         return $a - $b;
+    //     } elseif ($operation == 'multiply') {
+    //         return $a * $b;
+    //     } elseif ($operation == 'divide') {
+    //         if ($b == 0) {
+    //             return 'Error: Division by zero';
+    //         }
+    //         return $a / $b;
+    //     } else {
+    //         return 'Error: Unknown operation';
+    //     }
+    // }
 }
