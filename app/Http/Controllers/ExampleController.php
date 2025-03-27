@@ -16,6 +16,7 @@ class ExampleController extends Controller
             'luigi',
             'stefano',
             'giuseppe',
+            'maria',
         ];
     }
 
