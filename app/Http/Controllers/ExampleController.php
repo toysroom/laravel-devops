@@ -14,12 +14,11 @@ class ExampleController extends Controller
         $names = [
             'mario',
             'luigi',
-            'stefano',
-            'franco',
+            'stefano'
         ];
     }
 
-    public function anotherFunction(): void 
+    public function anotherFunction(): void
     {
         $bar = "Goodbye"; // Errore: mancanza di spazi attorno all'operatore di assegnazione
     }
