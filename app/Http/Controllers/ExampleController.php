@@ -14,7 +14,8 @@ class ExampleController extends Controller
         $names = [
             'mario',
             'luigi',
-            'stefano'
+            'stefano',
+            'giuseppe',
         ];
     }
 
