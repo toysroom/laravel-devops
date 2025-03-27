@@ -25,7 +25,7 @@ class ExampleController extends Controller
 
     public function someFunction(): string
     {
-        return "Another example" // Errore: mancanza di spazi attorno alle parentesi
+        return "Another example"; // Errore: mancanza di spazi attorno alle parentesi
     }
 
     // public function calculate($a: int , $b: int, $operation: string)
