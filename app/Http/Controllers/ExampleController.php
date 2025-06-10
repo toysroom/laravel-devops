@@ -38,7 +38,7 @@ class ExampleController extends Controller
         echo $user->getName();
     }
 
-    public function someFunction3(): void 
+    public function someFunction3(): void
     {
         $user = new User();
         $user->setName("56");
@@ -64,87 +64,59 @@ class ExampleController extends Controller
 
     public function generate(int $a): void
     {
-        if ($a == 1) 
+        if ($a == 1)
         { 
             echo "Step 1"; 
         }
-        if ($a == 1) 
+        if ($a == 1)
         { 
             echo "Step 1"; 
         }
-        if ($a == 1) 
+        if ($a == 1)
         { 
             echo "Step 1"; 
         }
-        if ($a == 1) 
+        if ($a == 1)
         { 
             echo "Step 1"; 
         }
-        if ($a == 1) 
+        if ($a == 1)
         { 
             echo "Step 1"; 
         }
-        if ($a == 1) 
+        if ($a == 1)
         { 
             echo "Step 1"; 
         }
-        if ($a == 1) 
+        if ($a == 1)
         { 
             echo "Step 1"; 
         }
-        if ($a == 1) 
+        if ($a == 1)
         { 
             echo "Step 1"; 
         }
-        if ($a == 1) 
+        if ($a == 1)
         { 
             echo "Step 1"; 
         }
-        if ($a == 1) 
+        if ($a == 1)
         { 
             echo "Step 1"; 
         }
-        if ($a == 1) 
+        if ($a == 1)
         { 
             echo "Step 1"; 
         }
-        if ($a == 1) 
+        if ($a == 1)
         { 
             echo "Step 1"; 
         }
-        if ($a == 1) 
+        if ($a == 1)
         { 
             echo "Step 1"; 
         }
-        if ($a == 1) 
-        { 
-            echo "Step 1"; 
-        }
-        if ($a == 1) 
-        { 
-            echo "Step 1"; 
-        }
-        if ($a == 1) 
-        { 
-            echo "Step 1"; 
-        }
-        if ($a == 1) 
-        { 
-            echo "Step 1"; 
-        }
-        if ($a == 1) 
-        { 
-            echo "Step 1"; 
-        }
-        if ($a == 1) 
-        { 
-            echo "Step 1"; 
-        }
-        if ($a == 1) 
-        { 
-            echo "Step 1"; 
-        }
-        if ($a == 1) 
+        if ($a == 1)
         { 
             echo "Step 1"; 
         }
