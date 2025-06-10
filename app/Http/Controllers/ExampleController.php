@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 
 class ExampleController extends Controller
 {
-    public function exampleFunction(): void
+    public function exampleFunction(): void 
     {
-        $foo = "Hello World"; // Errore: mancanza di spazio tra la dichiarazione e la variabile
+        $foo= "Hello World"; // Errore: mancanza di spazio tra la dichiarazione e la variabile
         echo $foo;
 
         $names = [
@@ -16,17 +16,16 @@ class ExampleController extends Controller
             'luigi',
             'stefano',
             'giuseppe',
-            'maria',
+            'maria'
         ];
     }
 
-    public function anotherFunction(): void
+    public function anotherFunction(): void 
     {
-        $bar = "Goodbye"; // Errore: mancanza di spazi attorno all'operatore di assegnazione
+        $bar ="Goodbye"; // Errore: mancanza di spazi attorno all'operatore di assegnazione
     }
 
-    public function someFunction(): string
-    {
+    public function someFunction( ) : string {
         return "Another example"; // Errore: mancanza di spazi attorno alle parentesi
     }
 

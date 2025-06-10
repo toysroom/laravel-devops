@@ -22,21 +22,21 @@ pipeline {
             }
         }
 
-    //     stage('Code Quality Analysis') {
-    //         steps {
-    //             sh 'vendor/bin/phpstan analyse --level=max app/'
-    //             sh 'vendor/bin/phpcs --standard=PSR12 app/'
-    //             sh 'vendor/bin/phpmd app/ text cleancode,codesize,design'
-    //         }
-    //     }
+        stage('Code Quality Analysis') {
+            steps {
+                sh 'vendor/bin/phpstan analyse --level=max app/'
+                sh 'vendor/bin/phpcs --standard=PSR12 app/'
+                sh 'vendor/bin/phpmd app/ text cleancode,codesize,design'
+            }
+        }
 
-    //     stage('Run Security Check') {
-    //         steps {
-    //             script {
-    //                 sh 'vendor/bin/security-checker security:check || true'
-    //             }
-    //         }
-    //     }
+        stage('Run Security Check') {
+            steps {
+                script {
+                    sh 'vendor/bin/security-checker security:check || true'
+                }
+            }
+        }
 
     //     stage('Run Tests') {
     //         steps {
