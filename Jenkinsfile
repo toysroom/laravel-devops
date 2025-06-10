@@ -14,13 +14,13 @@ pipeline {
             }
         }
 
-    //     stage('Install Dependencies') {
-    //         steps {
-    //             sh 'composer install'
-    //             sh 'cp .env.example .env'
-    //             sh 'php artisan key:generate'
-    //         }
-    //     }
+        stage('Install Dependencies') {
+            steps {
+                sh 'composer install'
+                sh 'cp .env.example .env'
+                sh 'php artisan key:generate'
+            }
+        }
 
     //     stage('Code Quality Analysis') {
     //         steps {
