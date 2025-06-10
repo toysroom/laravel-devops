@@ -7,9 +7,9 @@ use App\Models\User;
 
 class ExampleController extends Controller
 {
-    public function exampleFunction(): void 
+    public function exampleFunction(): void
     {
-        $foo= "Hello World"; // Errore: mancanza di spazio tra la dichiarazione e la variabile
+        $foo = "Hello World"; // Errore: mancanza di spazio tra la dichiarazione e la variabile
         echo $foo;
 
         $names = [
@@ -17,25 +17,29 @@ class ExampleController extends Controller
             'luigi',
             'stefano',
             'giuseppe',
-            'maria'
+            'maria',
+            'pippo'
         ];
     }
 
     public function anotherFunction(): void 
     {
-        $bar ="Goodbye"; // Errore: mancanza di spazi attorno all'operatore di assegnazione
+        $bar = "Goodbye"; // Errore: mancanza di spazi attorno all'operatore di assegnazione
     }
 
-    public function someFunction( ) : string {
+    public function someFunction(): string 
+    {
         return "Another example"; // Errore: mancanza di spazi attorno alle parentesi
     }
 
-    public function someFunction2(): void {
+    public function someFunction2(): void 
+    {
         $user = new User();
         echo $user->getName();
     }
 
-    public function someFunction3(): void {
+    public function someFunction3(): void 
+    {
         $user = new User();
         $user->setName("56");
     }
@@ -58,7 +62,8 @@ class ExampleController extends Controller
     //     }
     // }
 
-    public function generate(int $a): void {
+    public function generate(int $a): void 
+    {
         if ($a == 1) { echo "Step 1"; }
         if ($a == 1) { echo "Step 1"; }
         if ($a == 1) { echo "Step 1"; }
@@ -87,7 +92,8 @@ class ExampleController extends Controller
         if ($a == 1) { echo "Step 1"; }
     }
 
-    public function greet(): void {
+    public function greet(): void 
+    {
         $unused = "Ciao";
         echo "Benvenuto!";
     }
