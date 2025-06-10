@@ -2,19 +2,17 @@ pipeline {
     agent any
 
     stages {
-        stage('Pre checkout') {
+         stage('Pre checkout') {
             steps {
                 echo "Hello world"
             }
         }
-    }
-
-    // stages {
-    //     stage('Checkout') {
-    //         steps {
-    //             git branch: 'main', url: 'https://github.com/toysroom/laravel-devops.git'
-    //         }
-    //     }
+        
+        stage('Checkout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/toysroom/laravel-devops.git'
+            }
+        }
 
     //     stage('Install Dependencies') {
     //         steps {
@@ -61,5 +59,5 @@ pipeline {
     //             subject: "Build failed: ${currentBuild.fullDisplayName}",
     //             body: "The build was failed!. Check the logs here: ${env.BUILD_URL}"
     //     }
-    // }
+    }
 }
