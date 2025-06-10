@@ -106,7 +106,7 @@ class ExampleController extends Controller
     //     }
     // }
 
-    public function greet(): void 
+    public function greet(): void
     {
         $unused = "Ciao";
         echo "Benvenuto!";
