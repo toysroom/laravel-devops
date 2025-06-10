@@ -62,49 +62,49 @@ class ExampleController extends Controller
     //     }
     // }
 
-    public function generate(int $a): void
-    {
-        if ($a == 1)
-        {
-            echo "Step 1";
-        }
-        if ($a == 1)
-        {
-            echo "Step 1";
-        }
-        if ($a == 1)
-        {
-            echo "Step 1";
-        }
-        if ($a == 1)
-        {
-            echo "Step 1";
-        }
-        if ($a == 1)
-        {
-            echo "Step 1";
-        }
-        if ($a == 1)
-        {
-            echo "Step 1";
-        }
-        if ($a == 1)
-        {
-            echo "Step 1";
-        }
-        if ($a == 1)
-        {
-            echo "Step 1";
-        }
-        if ($a == 1)
-        {
-            echo "Step 1";
-        }
-        if ($a == 1)
-        {
-            echo "Step 1";
-        }
-    }
+    // public function generate(int $a): void
+    // {
+    //     if ($a == 1)
+    //     {
+    //         echo "Step 1";
+    //     }
+    //     if ($a == 1)
+    //     {
+    //         echo "Step 1";
+    //     }
+    //     if ($a == 1)
+    //     {
+    //         echo "Step 1";
+    //     }
+    //     if ($a == 1)
+    //     {
+    //         echo "Step 1";
+    //     }
+    //     if ($a == 1)
+    //     {
+    //         echo "Step 1";
+    //     }
+    //     if ($a == 1)
+    //     {
+    //         echo "Step 1";
+    //     }
+    //     if ($a == 1)
+    //     {
+    //         echo "Step 1";
+    //     }
+    //     if ($a == 1)
+    //     {
+    //         echo "Step 1";
+    //     }
+    //     if ($a == 1)
+    //     {
+    //         echo "Step 1";
+    //     }
+    //     if ($a == 1)
+    //     {
+    //         echo "Step 1";
+    //     }
+    // }
 
     public function greet(): void 
     {
