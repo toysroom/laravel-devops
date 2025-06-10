@@ -47,12 +47,12 @@ class User extends Authenticatable
         ];
     }
 
-    public function getName(): string 
+    public function getName(): string
     {
         return 'Mario';
     }
 
-    public function setName(string $nome): void 
+    public function setName(string $nome): void
     {
         echo $nome;
     }

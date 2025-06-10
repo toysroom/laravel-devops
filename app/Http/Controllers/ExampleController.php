@@ -22,17 +22,17 @@ class ExampleController extends Controller
         ];
     }
 
-    public function anotherFunction(): void 
+    public function anotherFunction(): void
     {
         $bar = "Goodbye"; // Errore: mancanza di spazi attorno all'operatore di assegnazione
     }
 
-    public function someFunction(): string 
+    public function someFunction(): string
     {
         return "Another example"; // Errore: mancanza di spazi attorno alle parentesi
     }
 
-    public function someFunction2(): void 
+    public function someFunction2(): void
     {
         $user = new User();
         echo $user->getName();
@@ -62,34 +62,92 @@ class ExampleController extends Controller
     //     }
     // }
 
-    public function generate(int $a): void 
+    public function generate(int $a): void
     {
-        if ($a == 1) { echo "Step 1"; }
-        if ($a == 1) { echo "Step 1"; }
-        if ($a == 1) { echo "Step 1"; }
-        if ($a == 1) { echo "Step 1"; }
-        if ($a == 1) { echo "Step 1"; }
-        if ($a == 1) { echo "Step 1"; }
-        if ($a == 1) { echo "Step 1"; }
-        if ($a == 1) { echo "Step 1"; }
-        if ($a == 1) { echo "Step 1"; }
-        if ($a == 1) { echo "Step 1"; }
-        if ($a == 1) { echo "Step 1"; }
-        if ($a == 1) { echo "Step 1"; }
-        if ($a == 1) { echo "Step 1"; }
-        if ($a == 1) { echo "Step 1"; }
-        if ($a == 1) { echo "Step 1"; }
-        if ($a == 1) { echo "Step 1"; }
-        if ($a == 1) { echo "Step 1"; }
-        if ($a == 1) { echo "Step 1"; }
-        if ($a == 1) { echo "Step 1"; }
-        if ($a == 1) { echo "Step 1"; }
-        if ($a == 1) { echo "Step 1"; }
-        if ($a == 1) { echo "Step 1"; }
-        if ($a == 1) { echo "Step 1"; }
-        if ($a == 1) { echo "Step 1"; }
-        if ($a == 1) { echo "Step 1"; }
-        if ($a == 1) { echo "Step 1"; }
+        if ($a == 1) 
+        { 
+            echo "Step 1"; 
+        }
+        if ($a == 1) 
+        { 
+            echo "Step 1"; 
+        }
+        if ($a == 1) 
+        { 
+            echo "Step 1"; 
+        }
+        if ($a == 1) 
+        { 
+            echo "Step 1"; 
+        }
+        if ($a == 1) 
+        { 
+            echo "Step 1"; 
+        }
+        if ($a == 1) 
+        { 
+            echo "Step 1"; 
+        }
+        if ($a == 1) 
+        { 
+            echo "Step 1"; 
+        }
+        if ($a == 1) 
+        { 
+            echo "Step 1"; 
+        }
+        if ($a == 1) 
+        { 
+            echo "Step 1"; 
+        }
+        if ($a == 1) 
+        { 
+            echo "Step 1"; 
+        }
+        if ($a == 1) 
+        { 
+            echo "Step 1"; 
+        }
+        if ($a == 1) 
+        { 
+            echo "Step 1"; 
+        }
+        if ($a == 1) 
+        { 
+            echo "Step 1"; 
+        }
+        if ($a == 1) 
+        { 
+            echo "Step 1"; 
+        }
+        if ($a == 1) 
+        { 
+            echo "Step 1"; 
+        }
+        if ($a == 1) 
+        { 
+            echo "Step 1"; 
+        }
+        if ($a == 1) 
+        { 
+            echo "Step 1"; 
+        }
+        if ($a == 1) 
+        { 
+            echo "Step 1"; 
+        }
+        if ($a == 1) 
+        { 
+            echo "Step 1"; 
+        }
+        if ($a == 1) 
+        { 
+            echo "Step 1"; 
+        }
+        if ($a == 1) 
+        { 
+            echo "Step 1"; 
+        }
     }
 
     public function greet(): void 
