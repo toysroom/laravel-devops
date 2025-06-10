@@ -46,4 +46,12 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function getName(): string {
+        return 'Mario';
+    }
+
+    public function setName(string $nome): void {
+        echo $nome;
+    }
 }
