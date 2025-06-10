@@ -32,15 +32,15 @@ class ExampleController extends Controller
 
     public function someFunction2(): void {
         $user = new User();
-        echo $user->getEmail();
+        echo $user->getName();
     }
 
     public function someFunction3(): void {
         $user = new User();
-        echo $user->setEmail(56);
+        echo $user->setName("56");
     }
 
-    public function calculate(int $a , int $b, string $operation)
+    public function calculate(int $a , int $b, string $operation): string
     {
         if ($operation == 'add') {
             return $a + $b;
@@ -58,32 +58,36 @@ class ExampleController extends Controller
         }
     }
 
-    public function generate() {
-        if (true) { echo "Step 1"; }
-        if (true) { echo "Step 2"; }
-        if (true) { echo "Step 3"; }
-        if (true) { echo "Step 4"; }
-        if (true) { echo "Step 5"; }
-        if (true) { echo "Step 5"; }
-        if (true) { echo "Step 5"; }
-        if (true) { echo "Step 5"; }
-        if (true) { echo "Step 5"; }
-        if (true) { echo "Step 5"; }
-        if (true) { echo "Step 5"; }
-        if (true) { echo "Step 5"; }
-        if (true) { echo "Step 5"; }
-        if (true) { echo "Step 5"; }
-        if (true) { echo "Step 5"; }
-        if (true) { echo "Step 5"; }
-        if (true) { echo "Step 5"; }
-        if (true) { echo "Step 5"; }
-        if (true) { echo "Step 5"; }
-        if (true) { echo "Step 5"; }
-        if (true) { echo "Step 5"; }
-        if (true) { echo "Step 5"; }
+    public function generate($a): void {
+        if ($a == 1) { echo "Step 1"; }
+        if ($a == 1) { echo "Step 1"; }
+        if ($a == 1) { echo "Step 1"; }
+        if ($a == 1) { echo "Step 1"; }
+        if ($a == 1) { echo "Step 1"; }
+        if ($a == 1) { echo "Step 1"; }
+        if ($a == 1) { echo "Step 1"; }
+        if ($a == 1) { echo "Step 1"; }
+        if ($a == 1) { echo "Step 1"; }
+        if ($a == 1) { echo "Step 1"; }
+        if ($a == 1) { echo "Step 1"; }
+        if ($a == 1) { echo "Step 1"; }
+        if ($a == 1) { echo "Step 1"; }
+        if ($a == 1) { echo "Step 1"; }
+        if ($a == 1) { echo "Step 1"; }
+        if ($a == 1) { echo "Step 1"; }
+        if ($a == 1) { echo "Step 1"; }
+        if ($a == 1) { echo "Step 1"; }
+        if ($a == 1) { echo "Step 1"; }
+        if ($a == 1) { echo "Step 1"; }
+        if ($a == 1) { echo "Step 1"; }
+        if ($a == 1) { echo "Step 1"; }
+        if ($a == 1) { echo "Step 1"; }
+        if ($a == 1) { echo "Step 1"; }
+        if ($a == 1) { echo "Step 1"; }
+        if ($a == 1) { echo "Step 1"; }
     }
 
-    public function greet() {
+    public function greet(): void {
         $unused = "Ciao";
         echo "Benvenuto!";
     }
