@@ -37,28 +37,28 @@ class ExampleController extends Controller
 
     public function someFunction3(): void {
         $user = new User();
-        echo $user->setName("56");
+        $user->setName("56");
     }
 
-    public function calculate(int $a , int $b, string $operation): string
-    {
-        if ($operation == 'add') {
-            return $a + $b;
-        } elseif ($operation == 'subtract') {
-            return $a - $b;
-        } elseif ($operation == 'multiply') {
-            return $a * $b;
-        } elseif ($operation == 'divide') {
-            if ($b == 0) {
-                return 'Error: Division by zero';
-            }
-            return $a / $b;
-        } else {
-            return 'Error: Unknown operation';
-        }
-    }
+    // public function calculate(int $a , int $b, string $operation): string
+    // {
+    //     if ($operation == 'add') {
+    //         return $a + $b;
+    //     } elseif ($operation == 'subtract') {
+    //         return $a - $b;
+    //     } elseif ($operation == 'multiply') {
+    //         return $a * $b;
+    //     } elseif ($operation == 'divide') {
+    //         if ($b == 0) {
+    //             return 'Error: Division by zero';
+    //         }
+    //         return $a / $b;
+    //     } else {
+    //         return 'Error: Unknown operation';
+    //     }
+    // }
 
-    public function generate($a): void {
+    public function generate(int $a): void {
         if ($a == 1) { echo "Step 1"; }
         if ($a == 1) { echo "Step 1"; }
         if ($a == 1) { echo "Step 1"; }
